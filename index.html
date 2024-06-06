@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pl-Pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sprawdzenie wieku</title>
+</head>
+<body>
+    <p id="wynik"></p>
+    <input type="text" id="pole"/>
+    <input type="submit" value="sprawdż Wiek" onclick="sprawdzWiek()"/>
+    <script type="text/javascript">
+        function sprawdzWiek()
+        {
+            var wiek = document.getElementById("pole").value;
+            if(wiek<18)document.getElementById("wynik").innerHTML="Jesteś niepełnoletni";
+            else if(wiek>=18)document.getElementById("wynik").innerHTML="Jesteś pełnoletni,możesz iść za piwkiem";
+        }
+    </script>
+    
+</body>
+</html>
